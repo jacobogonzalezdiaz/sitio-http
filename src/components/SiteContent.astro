@@ -1,0 +1,28 @@
+---
+import type { CardItem } from "../types/types";
+import CardsView from "./CardsView";
+
+const cards:CardItem[] = [
+    {
+        title: "Titulo 1",
+        image:"/assets/game-info-panel-01.jpg",
+        description: "Description"
+    }
+]
+
+---
+
+<section>
+    <div class="trailer">
+        <img src="/assets/launch-trailer.jpg" alt="">
+    </div>
+    <div class="description">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum exercitationem
+         aliquid non velit, quod in debitis, consectetur veniam, est nisi aliquam
+          deserunt excepturi voluptatem tempora amet illum a eaque praesentium ut
+           doloremque quia quasi consequatur. Earum, voluptatem! Sed voluptas saepe odit hic excepturi, nihil magni libero? Vero cumque quae odio.
+    </div>
+    <div class="cardsContainer">
+        <CardsView cards={cards} client:load/>
+    </div>
+</section>
